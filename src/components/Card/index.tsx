@@ -1,5 +1,24 @@
-import { Teste } from "./styles";
+import { CardBackground, CardHeader, CardTitle } from "./styles";
 
-export const Header: React.FC = () => {
-  return <div></div>;
+interface CardProps {
+  cardTitle?: string;
+  cardInfoIcon?: string;
+  cardMenuIcon?: string;
+}
+export const Card: React.FC<CardProps> = ({
+  cardTitle,
+  cardInfoIcon,
+  cardMenuIcon,
+}) => {
+  return (
+    <CardBackground>
+      <CardHeader>
+        <CardTitle>
+          {cardTitle}
+          <img src={cardInfoIcon} alt="cardInfoIcon" />
+        </CardTitle>
+        <img src={cardMenuIcon} alt="cardMenuIcon" />
+      </CardHeader>
+    </CardBackground>
+  );
 };

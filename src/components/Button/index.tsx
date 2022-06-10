@@ -1,5 +1,16 @@
-import { Teste } from "./styles";
+import { ButtonBackground, ButtonText } from "./styles";
 
-export const Header: React.FC = () => {
-  return <div></div>;
+
+interface ButtonProps {
+  buttonIcon?: string;
+  buttonText?: string;
+}
+
+export const Button: React.FC<ButtonProps> = ({ buttonIcon, buttonText }) => {
+  return (
+    <ButtonBackground>
+      <img src={buttonIcon} alt="buttonIcon" />
+      <ButtonText>{buttonText}</ButtonText>
+    </ButtonBackground>
+  );
 };

@@ -1,5 +1,5 @@
-import { Teste } from "./styles";
+import { HeaderBar } from "./styles";
 
 export const Header: React.FC = () => {
-  return <div></div>;
+  return <HeaderBar />;
 };
