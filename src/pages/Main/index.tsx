@@ -25,6 +25,11 @@ export const Main: React.FC = () => {
             cardInfoIcon={CardInfoIcon}
             cardMenuIcon={CardMenuIcon}
           />
+          <Card
+            cardTitle="Teste"
+            cardInfoIcon={CardInfoIcon}
+            cardMenuIcon={CardMenuIcon}
+          />
         </CardsWrapper>
       </ContentWrapper>
     </div>

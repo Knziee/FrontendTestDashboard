@@ -3,13 +3,19 @@ import styled from "styled-components";
 export const ButtonBackground = styled.button`
   width: 100px;
   height: 40px;
-  background: #5d405c;
+  background-color: #5d405c;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   img {
     margin-right: 11px;
+  }
+  :hover {
+    background-color: #755474;
+  }
+  :active {
+    background-color: #3b263a;
   }
 `;
 export const ButtonText = styled.div`

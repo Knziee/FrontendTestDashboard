@@ -11,6 +11,12 @@ export const CardBackground = styled.div`
 export const CardHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: 20px;
+  img {
+    margin-bottom: -11px;
+  }
 `;
 
 export const CardTitle = styled.div`
@@ -20,4 +26,8 @@ export const CardTitle = styled.div`
   line-height: 20px;
   letter-spacing: 0em;
   color: #5d405c;
+  img {
+    margin-bottom: -3px;
+    margin-left: 16px;
+  }
 `;
