@@ -6,7 +6,7 @@ Frontend test for MINEHR
 
 ## Link to the application:
 
-[dashboard test](https://dashboard-for-minehr-test.herokuapp.com/)
+[Heroku Deploy](https://dashboard-for-minehr-test.herokuapp.com/)
 
 ## Technologies used:
 
