@@ -1,4 +1,4 @@
-# Telzir Falemais
+# Frontend Dashboard Test
 
 ## About the project:
 
@@ -21,7 +21,7 @@ A application with a main screen containing two graphs
 
 ## Preview:
 
-![preview](http://url/to/img.png)
+![preview](https://i.imgur.com/XWjkqFJ.png)
 
 
 ## developed by:
