@@ -2,10 +2,7 @@ import styled from "styled-components";
 
 export const TitleSubtitleContainer = styled.div`
   font-family: "Montserrat";
-
   line-height: 34px;
-  letter-spacing: 0em;
-  text-align: left;
 `;
 
 export const TitleStyle = styled.div`

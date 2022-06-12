@@ -1,4 +1,9 @@
-import { ContentWrapper, TitleButtonWrapper, CardsWrapper } from "./styles";
+import {
+  ContentWrapper,
+  TitleAndButtonWrapper,
+  ButtonAdjust,
+  CardsWrapper,
+} from "./styles";
 import { Header } from "../../components/Header";
 import { TitleSubtitle } from "../../components/TitleSubtitle";
 import { Button } from "../../components/Button";
@@ -13,13 +18,15 @@ export const Main: React.FC = () => {
     <div>
       <Header />
       <ContentWrapper>
-        <TitleButtonWrapper>
+        <TitleAndButtonWrapper>
           <TitleSubtitle
             titleText="Dashboard"
             subTitleText="Desafio Técnico Frontend"
           />
-          <Button buttonIcon={FilterIcon} buttonText="Filtrar" />
-        </TitleButtonWrapper>
+          <ButtonAdjust>
+            <Button buttonIcon={FilterIcon} buttonText="Filtrar" />
+          </ButtonAdjust>
+        </TitleAndButtonWrapper>
         <CardsWrapper>
           {graphList.map((graphList, index) => {
             return <Card cardGraph={graphList.graph} />;
