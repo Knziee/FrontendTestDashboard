@@ -5,7 +5,7 @@ import { ApexOptions } from "apexcharts";
 export const ScatterGraph: React.FC = () => {
   const series: any = [
     {
-      name: "SAMPLE A",
+      name: "AMOSTRA A",
       data: [
         [16.4, 5.4],
         [21.7, 2],
@@ -41,7 +41,7 @@ export const ScatterGraph: React.FC = () => {
       ],
     },
     {
-      name: "SAMPLE B",
+      name: "AMOSTRA B",
       data: [
         [36.4, 13.4],
         [1.7, 11],
@@ -77,7 +77,7 @@ export const ScatterGraph: React.FC = () => {
       ],
     },
     {
-      name: "SAMPLE C",
+      name: "AMOSTRA C",
       data: [
         [21.7, 3],
         [23.6, 3.5],
@@ -156,8 +156,12 @@ export const ScatterGraph: React.FC = () => {
     },
     responsive: [
       {
-        breakpoint: undefined,
-        options: {},
+        breakpoint: 721,
+        options: {
+          chart: {
+            width: "86%",
+          },
+        },
       },
     ],
     xaxis: {

@@ -50,18 +50,11 @@ export const BarGraph: React.FC = () => {
         breakpoint: 721,
         options: {
           chart: {
-            type: "bar",
-            height: 350,
-            width: 350,
-          },
-          bar: {
-            borderRadius: 4,
-            horizontal: false,
+            width: "90%",
           },
         },
       },
     ],
-
     plotOptions: {
       bar: {
         borderRadius: 4,
@@ -73,16 +66,16 @@ export const BarGraph: React.FC = () => {
     },
     xaxis: {
       categories: [
-        "South Korea",
-        "Canada",
-        "United Kingdom",
-        "Netherlands",
-        "Italy",
-        "France",
-        "Japan",
-        "United States",
+        "Coreia do Sul",
+        "Canadá",
+        "Reino Unido",
+        "Holanda",
+        "Itália",
+        "França",
+        "Japão",
+        "Estados Unidos",
         "China",
-        "Germany",
+        "Alemanha",
       ],
     },
   };
