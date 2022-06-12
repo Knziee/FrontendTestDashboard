@@ -1,4 +1,3 @@
-import {} from "./styles";
 import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 

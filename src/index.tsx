@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import GlobalStyle from "./assets/styles/GlobalStyle";
-import {} from "./assets/fonts/fonts";
+import GlobalStyle from "./assets/styles/globalStyle";
 import App from "./App";
 
 const root = ReactDOM.createRoot(

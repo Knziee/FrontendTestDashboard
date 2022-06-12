@@ -29,7 +29,7 @@ export const Main: React.FC = () => {
         </TitleAndButtonWrapper>
         <CardsWrapper>
           {graphList.map((graphList, index) => {
-            return <Card cardGraph={graphList.graph} />;
+            return <Card key={index} cardGraph={graphList.graph} />;
           })}
         </CardsWrapper>
       </ContentWrapper>
