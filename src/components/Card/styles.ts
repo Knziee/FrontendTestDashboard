@@ -18,16 +18,3 @@ export const CardHeader = styled.div`
   margin-left: 105px;
   margin-top: 24.5px;
 `;
-
-export const CardTitle = styled.div`
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
-  color: #5d405c;
-  img {
-    margin-bottom: -3px;
-    margin-left: 16px;
-  }
-`;

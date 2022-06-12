@@ -112,6 +112,7 @@ export const ScatterGraph: React.FC = () => {
       ],
     },
   ];
+
   const options: ApexOptions = {
     title: {
       text: "Scatter",
@@ -127,7 +128,6 @@ export const ScatterGraph: React.FC = () => {
         color: "#5D405C",
       },
     },
-
     chart: {
       height: 350,
       type: "scatter",
@@ -177,14 +177,12 @@ export const ScatterGraph: React.FC = () => {
   };
 
   return (
-    <div>
-      <ReactApexChart
-        options={options}
-        series={series}
-        type="scatter"
-        height={340}
-        width={600}
-      />
-    </div>
+    <ReactApexChart
+      options={options}
+      series={series}
+      type="scatter"
+      height={340}
+      width={600}
+    />
   );
 };

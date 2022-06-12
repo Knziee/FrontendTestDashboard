@@ -1,5 +1,4 @@
-import { CardBackground, CardHeader, CardTitle } from "./styles";
-import { BarGraph } from "../Graphs/BarGraph";
+import { CardBackground, CardHeader } from "./styles";
 import CardInfoIcon from "../../assets/images/cardInfoIcon.svg";
 
 interface CardProps {

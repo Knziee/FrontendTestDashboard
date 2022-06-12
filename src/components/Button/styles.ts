@@ -15,10 +15,10 @@ export const ButtonBackground = styled.button`
     background-color: #5c3f5c;
   }
 `;
+
 export const ButtonText = styled.div`
   font-family: "Montserrat";
   color: #f6f6f6;
   font-size: 14px;
   font-weight: 600;
-  line-height: 17px;
 `;

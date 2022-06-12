@@ -23,7 +23,6 @@ export const BarGraph: React.FC = () => {
         color: "#5D405C",
       },
     },
-
     chart: {
       type: "bar",
       height: 350,
@@ -78,15 +77,14 @@ export const BarGraph: React.FC = () => {
       ],
     },
   };
+
   return (
-    <div>
-      <ReactApexChart
-        options={options}
-        series={series}
-        type="bar"
-        height={350}
-        width={610}
-      />
-    </div>
+    <ReactApexChart
+      options={options}
+      series={series}
+      type="bar"
+      height={350}
+      width={610}
+    />
   );
 };

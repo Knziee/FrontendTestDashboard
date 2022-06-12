@@ -14,6 +14,7 @@ import FilterIcon from "../../assets/images/filterIcon.svg";
 
 export const Main: React.FC = () => {
   const graphList = [{ graph: <BarGraph /> }, { graph: <ScatterGraph /> }];
+
   return (
     <div>
       <Header />
