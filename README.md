@@ -21,7 +21,7 @@ A application with a main screen containing two graphs
 
 ## Preview:
 
-![preview](FrontendTestDashboard\src\assets\images/dashboardPreview.png "preview")
+![preview](\src\assets\images/dashboardPreview.png "preview")
 
 ## developed by:
 
