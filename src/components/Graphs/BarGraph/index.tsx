@@ -47,8 +47,18 @@ export const BarGraph: React.FC = () => {
     },
     responsive: [
       {
-        breakpoint: undefined,
-        options: {},
+        breakpoint: 721,
+        options: {
+          chart: {
+            type: "bar",
+            height: 350,
+            width: 350,
+          },
+          bar: {
+            borderRadius: 4,
+            horizontal: false,
+          },
+        },
       },
     ],
 

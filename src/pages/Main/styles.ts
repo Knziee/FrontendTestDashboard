@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const ContentWrapper = styled.div`
   max-width: 1380px;
   margin: auto;
+  @media only screen and (max-width: 1439px) {
+    max-width: 96vw;
+  }
+  @media only screen and (max-width: 720px) {
+    max-width: 86vw;
+  }
 `;
 export const TitleAndButtonWrapper = styled.div`
   display: flex;
@@ -18,4 +24,9 @@ export const CardsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 30px;
+  @media only screen and (max-width: 1439px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
 `;
