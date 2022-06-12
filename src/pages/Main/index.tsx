@@ -3,11 +3,12 @@ import { Header } from "../../components/Header";
 import { TitleSubtitle } from "../../components/TitleSubtitle";
 import { Button } from "../../components/Button";
 import { Card } from "../../components/Card";
+import { BarGraph } from "../../components/Graphs/BarGraph";
+import { ScatterGraph } from "../../components/Graphs/ScatterGraph";
 import FilterIcon from "../../assets/images/filterIcon.svg";
-import CardInfoIcon from "../../assets/images/cardInfoIcon.svg";
-import CardMenuIcon from "../../assets/images/cardMenuIcon.svg";
 
 export const Main: React.FC = () => {
+  const graphList = [{ graph: <BarGraph /> }, { graph: <ScatterGraph /> }];
   return (
     <div>
       <Header />
@@ -20,16 +21,9 @@ export const Main: React.FC = () => {
           <Button buttonIcon={FilterIcon} buttonText="Filtrar" />
         </TitleButtonWrapper>
         <CardsWrapper>
-          <Card
-            cardTitle="Teste"
-            cardInfoIcon={CardInfoIcon}
-            cardMenuIcon={CardMenuIcon}
-          />
-          <Card
-            cardTitle="Teste"
-            cardInfoIcon={CardInfoIcon}
-            cardMenuIcon={CardMenuIcon}
-          />
+          {graphList.map((graphList, index) => {
+            return <Card cardGraph={graphList.graph} />;
+          })}
         </CardsWrapper>
       </ContentWrapper>
     </div>

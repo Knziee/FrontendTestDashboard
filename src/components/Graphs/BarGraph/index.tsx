@@ -2,18 +2,19 @@ import {} from "./styles";
 import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 
-export const Graph: React.FC = () => {
+export const BarGraph: React.FC = () => {
   const series = [
     {
       data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380],
     },
   ];
+
   const options: ApexOptions = {
     title: {
       text: "Barras",
       align: "left",
-      margin: 0,
-      offsetX: -6,
+      margin: 5,
+      offsetX: -10,
       offsetY: 20,
       floating: false,
       style: {
@@ -28,7 +29,29 @@ export const Graph: React.FC = () => {
       type: "bar",
       height: 350,
       offsetX: 33,
+      toolbar: {
+        show: true,
+        offsetX: 18,
+        offsetY: 20,
+        tools: {
+          download:
+            '<img src="https://i.imgur.com/FNKAoCC.png" class="" width="25">',
+          selection: true,
+          zoom: false,
+          zoomin: true,
+          zoomout: true,
+          pan: true,
+          customIcons: [],
+        },
+      },
     },
+    responsive: [
+      {
+        breakpoint: undefined,
+        options: {},
+      },
+    ],
+
     plotOptions: {
       bar: {
         borderRadius: 4,

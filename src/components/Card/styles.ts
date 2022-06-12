@@ -9,14 +9,9 @@ export const CardBackground = styled.div`
 `;
 
 export const CardHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 50px;
-  margin-top: 20px;
-  img {
-    margin-bottom: -11px;
-  }
+  position: absolute;
+  margin-left: 105px;
+  margin-top: 24.5px;
 `;
 
 export const CardTitle = styled.div`
