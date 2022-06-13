@@ -17,7 +17,7 @@ export const ButtonBackground = styled.button`
 `;
 
 export const ButtonText = styled.div`
-  font-family: "Montserrat";
+  font-family: "MontserratSemiBold";
   color: #f6f6f6;
   font-size: 14px;
   font-weight: 600;
